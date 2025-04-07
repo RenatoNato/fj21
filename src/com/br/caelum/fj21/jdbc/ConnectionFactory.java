@@ -21,7 +21,11 @@ public class ConnectionFactory {
 		try {
 			Class.forName("org.h2.Driver");
 			Connection con = DriverManager.getConnection(
-					"jdbc:h2:mem:fj21;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'classpath:schema.sql'", "sa", "1234");
+					"jdbc:h2:~/fj21;AUTO_SERVER=TRUE", "sa", "1234");
+					//"jdbc:h2:~/fj21;INIT=RUNSCRIPT FROM 'classpath:schema.sql';AUTO_SERVER=TRUE", "sa", "1234");
+					//"jdbc:h2:mem:fj21;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'classpath:schema.sql'", "sa", "1234");
+			//"jdbc:h2:~/fj21;INIT=RUNSCRIPT FROM 'classpath:schema.sql';AUTO_SERVER=TRUE"
+
 			System.out.println("✅ Conectado ao banco H2");
 			return con;
 		} catch (ClassNotFoundException | SQLException ex) {
