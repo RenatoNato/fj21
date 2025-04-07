@@ -10,8 +10,8 @@ public class TestaInsere {
 
 		//Cria um cointato pronto para gravar
 		Contato contato = new Contato();
-		contato.setNome("Caelum Softwares");
-		contato.setEmail("contato@caelum.com");
+		contato.setNome("Cezar Softwares");
+		contato.setEmail("renatocezarsilva@hotmail.com");
 		contato.setEndereco("Av. Henriqueta Mendes Guerra 1330");
 		contato.setDataNascimento(Calendar.getInstance());
 		
