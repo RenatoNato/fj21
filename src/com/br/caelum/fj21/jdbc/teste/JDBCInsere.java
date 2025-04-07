@@ -18,8 +18,8 @@ public class JDBCInsere {
 			PreparedStatement stmt = con.prepareStatement(sql);
 
 			// Preenche valores
-			stmt.setString(1, "Caelum");
-			stmt.setString(2, "contato@caelum.com.br");
+			stmt.setString(1, "Cezar");
+			stmt.setString(2, "renato@hotmail.com.br");
 			stmt.setString(3, "R. Vergueiro 3185 cj57");
 			stmt.setDate(4, new java.sql.Date(Calendar.getInstance().getTimeInMillis()));
 
