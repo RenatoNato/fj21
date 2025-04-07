@@ -1,0 +1,61 @@
+git init -- Iniciar um repositório existente ou cria um repositório vazio para o git.
+git add . -- Adiciona vários arquivos novos ou alterados no diretório criado ou inicializado no git.
+git add nome_do_arquivo.txt -- Adiciona apenas um arquivo ao diretório criado ou inicializado no git.
+git commit -m -- Grava as alterações no diretório git, a opção -m grava uma mensagemn o commit.
+git branch -M main -- Renomeia a branch atual para main, a opção -M serve para mover/renomear à força.
+
+ssh-keygen -t ed25519 -C "meu_email@example.com" -- No terminal, criar uma chave SSH na pasta c:\usuário\.ssh, 
+-- no arquivo de extensão .pub irá conter a chave pública, copiar chave para o github no endereço: https://github.com/settings/ssh/new
+-- e adicionar a nova chave lá colocando um título.
+
+git remote add origin git@github.com:RenatoNato/numero-secreto.git -- Cria um vinculo entre o repositório local e remoto.
+
+git push -u origin main --  Este comando é utilizado para enviar as alterações locais para um repositório remoto,
+-- No nosso caso é usado para enviar alterações do ramo local chamado main, para o repositório remoto associado ao alias(apelido) origin.
+
+--Baixar uma cópia de um repositório hospedado no GitHub para o seu computador, 
+--utilizando o comando: 
+git clone
+
+--Realizar alterações no código de um projeto e registrá-las com commits, 
+--utilizando os comandos:
+git add e git commit
+
+--Visualizar quais arquivos foram modificados no repositório local, 
+--utilizando o comando:
+git status
+
+--Listar os commits realizados no repositório, com dados do autor, 
+--data e mensagem de cada commit, utilizando o comando:
+git log
+
+--Visualizar os repositórios remotos linkados com o repositório local, 
+--utilizando o comando:
+git remote
+
+--Enviar commits feitos no repositório local para o repositório remoto, 
+--utilizando o comando:
+git push
+
+--Baixar commits do repositório remoto para o repositório local, 
+--utilizando o comando:
+git pull
+
+--Adicionar uma pessoa como colaboradora em um repositório no GitHub, 
+--e também como aceitar um convite de colaboração recebido.
+
+Outros comandos úteis ou variações dos já citados.
+
+git remote -v -- Listar os repositórios remotos, Obs: Vai aparecer duplicado mesmo, 
+-- pois o Git separa a url de envio de commits (push) da url de baixar commits (fetch).
+
+git remote remove origin -- Remover um repositório remoto.
+
+git remote set-url origin -- Alterar a URL de um repositório remoto. Isso atualizará a URL do repositório remoto "origin" 
+-- para a nova URL especificada.
+
+git remote rename origin novo-origin -- Alterar o apelido de um repositório remoto.
+
+
+
+
